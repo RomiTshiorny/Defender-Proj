@@ -1,2 +1,2 @@
 # Defender-Proj
-This is where we do our projects stuff
+Image: Make all our images 400x800 to fit the XNA window perfectly
