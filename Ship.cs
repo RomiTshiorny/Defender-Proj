@@ -22,6 +22,7 @@ namespace Defender
         private int bulletTimer;
         private Rectangle shipRect;
         private Texture2D shipTex;
+        private int health;
         public Ship(Texture2D image, Rectangle rect)
         {
             shipTex = image;
@@ -147,8 +148,11 @@ namespace Defender
         }
         public void shoot()
         {
-            if (getBulletTimer() % 2 == 0)
-                System.Media.SystemSounds.Hand.Play();
+            
+        }
+        public void reduceHealth(int hp)
+        {
+            health -= hp;
         }
     }
 }
